@@ -1,0 +1,13 @@
+Różnice między wzorcem strategia od zwykłej implementacji interfejsu:
+ - dynamiczność: Wzorzec Strategia umożliwia zmianę algorytmu wykonywanego przez obiekt w trakcie jego działania, co jest trudne do osiągnięcia przy zastosowaniu zwykłej implementacji interfejsu bez dodatkowego mechanizmu zarządzania.
+ - enkapsulacja algorytmów: Strategia enkapsuluje algorytmy w osobnych klasach, co ułatwia ich niezależny rozwój i testowanie. Zwykła implementacja interfejsu często wiąże algorytm z konkretną klasą, co może utrudniać jego ponowne użycie.
+ - wymienialność: wzorzec strategii promuje wymienialność algorytmów poprzez definiowanie rodziny algorytmów jako oddzielnych, interaktywnych obiektów, które mogą być łatwo zamieniane w kontekście. W przypadku zwykłej implementacji interfejsu, wymiana zachowań wymagałaby zmiany klasy lub implementacji dodatkowej logiki warunkowej.
+
+ Zalety wzorca strategia:
+ - separacja obowiązków: oddzielanie implementacji algorytmu od jego użycia, dzięki czemu testowanie i zarządzanie kodem jest łatwiejsze
+ - ukrywanie szczegółów implementacyjnych
+ - rozszerzalność: wzorzec strategia daje możliwość łatwego rozszerzania kodu, bez wpływu na działanie tego już napisanego
+
+ Wady wzorca strategia:
+ - złożoność, ponieważ często wprowadza dodatkowe klasy do projektów. W przypadku prostych projektów nie zawsze jest to potrzebne
+ - może prowadzić do zwiększenia zużycia pamięci ze względu na to, że każda strategia jest osobnym obiektem
