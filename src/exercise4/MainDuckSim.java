@@ -20,7 +20,7 @@ public class MainDuckSim {
         ducks.get(1).setFlyBehaviour(new FlyingBehaviour() {
             @Override
             public void fly() {
-                System.out.println("exercise4.Duck is flying with jetpack");
+                System.out.println("Duck is flying with jetpack");
             }
         });
 

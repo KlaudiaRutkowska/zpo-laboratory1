@@ -4,6 +4,6 @@ public class FlyingWithWings implements FlyingBehaviour {
 
     @Override
     public void fly() {
-        System.out.println("exercise4.Duck is flying with wings");
+        System.out.println("Duck is flying with wings");
     }
 }
