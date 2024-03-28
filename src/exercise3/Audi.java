@@ -1,12 +1,7 @@
 package exercise3;
 
-public class Audi implements Car {
-
-    public int getMaxSpeed() {
-        return 10;
-    }
-
-    public String getCarName() {
-        return "Audi";
+public class Audi extends Car {
+    public Audi(CarNameBehaviour carNameBehaviour, CarSpeedBehaviour carSpeedBehaviour) {
+        super(carNameBehaviour, carSpeedBehaviour);
     }
 }

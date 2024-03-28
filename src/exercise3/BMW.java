@@ -1,14 +1,7 @@
 package exercise3;
 
-public class BMW implements Car {
-
-    @Override
-    public int getMaxSpeed() {
-        return 250;
-    }
-
-    @Override
-    public String getCarName() {
-        return "BMW";
+public class BMW extends Car {
+    public BMW(CarNameBehaviour carNameBehaviour, CarSpeedBehaviour carSpeedBehaviour) {
+        super(carNameBehaviour, carSpeedBehaviour);
     }
 }
